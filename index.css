@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Unbounded', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-sans: 'Inter', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+}
+
+.font-display {
+  font-family: 'Unbounded', sans-serif;
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom Brutalist Range Slider */
+input[type='range'].brutalist-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 16px;
+  background: #171717;
+  border: 3px solid #CCFF00;
+  outline: none;
+}
+
+.light-mode input[type='range'].brutalist-slider {
+  background: #FFFFFF;
+  border: 3px solid #000000;
+}
+
+input[type='range'].brutalist-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  background: #FF3366;
+  border: 3px solid #FFFFFF;
+  cursor: pointer;
+  box-shadow: 3px 3px 0px #000000;
+}
+
+.light-mode input[type='range'].brutalist-slider::-webkit-slider-thumb {
+  border: 3px solid #000000;
+}
+
+/* Subtle Dot Grid Background */
+.bg-brutalist-grid-dark {
+  background-color: #0D0D0D;
+  background-image: radial-gradient(#262626 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
+
+.bg-brutalist-grid-light {
+  background-color: #F4F0EA;
+  background-image: radial-gradient(#D0C9C0 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
